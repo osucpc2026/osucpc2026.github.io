@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main class="max-w-3xl mx-auto px-6 py-16 space-y-16">
+
+    <!-- Hero -->
+    <section class="border border-slate-700 p-8">
+      <div class="flex items-center gap-6 mb-6">
+        <img
+          src="https://placehold.jp/200x200.png?text=OSCPC"
+          alt="OSCPC Logo"
+          width="80"
+          height="80"
+          class="border border-slate-600"
+          style="image-rendering: pixelated;"
+        />
+        <div>
+          <p class="mono text-slate-400 text-sm mb-1">Osaka Sangyo University</p>
+          <h1 class="text-2xl font-bold leading-tight text-slate-100">
+            大阪産業大学 競プロサークル
+          </h1>
+          <p class="mono text-slate-300 text-lg font-medium">OSCPC</p>
+        </div>
+      </div>
+      <p class="mono text-slate-300 text-base border-l-2 border-slate-500 pl-4">
+        Activities that lead to the next step
+      </p>
+    </section>
+
+    <!-- Status -->
+    <section>
+      <h2 class="mono text-slate-400 text-xs uppercase tracking-widest mb-4">
+        <i class="fa-solid fa-circle-info mr-2"></i>Status
+      </h2>
+      <div class="border border-slate-700 p-6 space-y-3 text-slate-300">
+        <div class="flex items-start gap-3">
+          <span class="mono text-slate-500 text-sm w-28 shrink-0">種別</span>
+          <span class="border border-yellow-600 text-yellow-400 mono text-xs px-2 py-0.5">非公認サークル</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mono text-slate-500 text-sm w-28 shrink-0">現状</span>
+          <span>創設したばかりのサークルです。現在は代表1名（電子計算研究部 部長）で活動中。</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mono text-slate-500 text-sm w-28 shrink-0">活動拠点</span>
+          <span>
+            <i class="fa-brands fa-discord mr-1 text-slate-400"></i>Discord
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activity -->
+    <section>
+      <h2 class="mono text-slate-400 text-xs uppercase tracking-widest mb-4">
+        <i class="fa-solid fa-terminal mr-2"></i>Activity
+      </h2>
+      <div class="border border-slate-700 p-6 space-y-4 text-slate-300">
+        <div class="flex items-start gap-3">
+          <span class="mono text-slate-500 text-sm w-28 shrink-0">言語</span>
+          <span>自由（推奨: <code class="mono text-slate-200 bg-slate-800 px-1">C言語</code>）</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mono text-slate-500 text-sm w-28 shrink-0">内容</span>
+          <ul class="space-y-1 list-none p-0 m-0">
+            <li><i class="fa-solid fa-chevron-right text-xs text-slate-500 mr-2"></i>AtCoder・paizaへの挑戦</li>
+            <li><i class="fa-solid fa-chevron-right text-xs text-slate-500 mr-2"></i>就活に向けたスキルアップ</li>
+            <li><i class="fa-solid fa-chevron-right text-xs text-slate-500 mr-2"></i>プログラミング好きの交流</li>
+          </ul>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="mono text-slate-500 text-sm w-28 shrink-0">レベル</span>
+          <span>
+            完璧である必要はありません。<code class="mono text-slate-200 bg-slate-800 px-1">printf</code>
+            がわかる程度からでOK。初心者歓迎。
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Join -->
+    <section>
+      <h2 class="mono text-slate-400 text-xs uppercase tracking-widest mb-4">
+        <i class="fa-solid fa-door-open mr-2"></i>How to Join
+      </h2>
+      <div class="border border-slate-700 p-6 space-y-4 text-slate-300">
+        <p class="text-slate-400 text-sm">参加方法は以下の2つのみです。招待リンクの不特定多数への公開はしていません。</p>
+        <ol class="space-y-3 list-none p-0 m-0">
+          <li class="flex items-start gap-3">
+            <span class="mono text-slate-500 text-sm w-6 shrink-0 text-right">1.</span>
+            <div>
+              <p class="mb-0.5">X (Twitter) のDMで連絡</p>
+              <a
+                href="https://x.com/osucpc2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mono text-slate-300 text-sm border border-slate-600 px-3 py-1 inline-block hover:border-slate-400 hover:text-white transition-colors"
+              >
+                <i class="fa-brands fa-x-twitter mr-1"></i>@osucpc2026
+              </a>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mono text-slate-500 text-sm w-6 shrink-0 text-right">2.</span>
+            <div>
+              <p class="mb-0.5">Discord Student Hub（大産大）から参加</p>
+              <span class="mono text-slate-400 text-sm border border-slate-700 px-3 py-1 inline-block">
+                <i class="fa-brands fa-discord mr-1"></i>Discord Student Hub
+              </span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 pt-6 text-slate-600 mono text-xs text-center">
+      &copy; 2026 OSCPC / 大阪産業大学 競プロサークル
+    </footer>
+
+  </main>
+</Layout>
